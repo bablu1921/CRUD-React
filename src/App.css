@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+*,::after,::before{
+  box-sizing: border-box;
+}
+.main{
+  display: grid;
+    grid-template-columns: auto auto auto auto;
+   column-gap: 10px;
+}
+.container{
+  width: 379.8px;
+  height: 440.45px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-cover{
+  width: 349.8px;
+  height: 410.45px;
+  border: 1px solid black;
+  margin: 15px;
+  border: 1px solid #e8e8e8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img-cover{
+  width: 347.8px;
+  height: 200px;
+  background: #fafafa;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-img-cover{
+  width: 347.8px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-img{
+  width: 200px;
+  height: 200px;
+  
+}
+.user-info-card {
+  width: 347.8px;
+  height: 157.8px;
+  
+}
+.user-info{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+.user-info-card{
+  padding: 24px;
+  zoom: 1;
+}
+h3{
+  margin-top: 0;
+    margin-bottom: 0.6em;
+    color: rgba(0, 0, 0, .85);
+    font-weight: 500;
+    font-size: 16.38px;
+}
+.user-data-icon{
+  /* width: 18px;
+  height: 18px; */
+  font-size: 18px;
+  color: rgba(0, 0, 0, .65);
+  
+  margin-bottom:4px;
+  
+}
+.user-data{
+ 
+
+margin: 0;
+margin-left: 10px;
+margin-bottom: 5px;
+color: rgba(0, 0, 0, .65);
+font-size: 14px;
+font-family: -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+line-height: 1.5;
+}
+
+.actions{
+  margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #fafafa;
+    border-top: 1px solid #e8e8e8;
+    zoom: 1;
+}
+
+.actions>li:not(:last-child){
+border-right: 1px solid #e8e8e8;
+}
+.actions{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.actions>li{
+  width: 115.93px;
+  height: 24.7px;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
+
+.action-icon{
+  font-size: 20px;
+  color:rgba(166, 163, 163, 0.65); 
+}
+
+.heart{
+  color: red;
+}
+
